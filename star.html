@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>starTriangle</title>
+
+</head>
+
+<body>
+    <pre id="result">
+    </pre>
+    <script type="text/javascript">
+        var arrStar = [];
+        for (var i = 5; i >= 0; i--) {
+            for (var j = 0; j <= i; j++) {
+                arrStar.push('* ');
+            }
+            arrStar.push('<br>');
+        }
+        document.getElementById('result').innerHTML = arrStar.join('');
+    </script>
+</body>
+
+</html>
